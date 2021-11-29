@@ -1,0 +1,31 @@
+---
+title: "esm206-lab10--"
+author: "Ridhima chaudhuri"
+date: "11/29/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(usethis)
+library(beepr)
+library(praise)
+library(cowsay)
+library(paletteer)
+library(sf)
+```
+Use 'beep()' to give yourself an audio alert.
+
+## for loop + beep
+
+```{r}
+for (i in rev(seq(1:9999))) 
+{
+    print(paste(i, "bottles of beer on the wall"))
+}
+
+beep(3)
+```
+
